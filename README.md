@@ -1,7 +1,7 @@
 # Mini Project - Radithya Mahesa Syabil / 251511025
 
-**URL Publik:**  
-**Source Code:** 
+**URL Publik:** https://raditted.github.io/mini-project-01_251511025_Radithya-Mahesa-Syabil/
+**Source Code:** https://github.com/raditted/mini-project-01_251511025_Radithya-Mahesa-Syabil.git
 
 ## Ringkasan halaman
 Telah dibuat landing page untuk UMKM "Roti Lieur" dengan struktur semantik (header, nav, main, section, footer). Halaman ini menampilkan informasi pengenalan brand, testimoni, alasan memilih produk, katalog roti, dan kontak UMKM. Layout dirancang responsif menggunakan Flexbox dengan pendekatan *mobile-first* (layout kolom pada layar kecil, lalu berubah menjadi baris pada layar besar)
