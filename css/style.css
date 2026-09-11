@@ -1,0 +1,243 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #A0522D;
+    --color-primary-dark: #7A3C1F;
+    --color-bg: #FDF6EF;
+    --color-surface: #fff;
+    --color-text: #2B2015;
+    --color-muted: #7C6F61;
+    --color-focus: gold;
+    --spacing-base: 1rem;
+    --radius-base: 12px;
+    --shadow-base: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--color-primary);
+}
+
+/* header */
+.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-base);
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-base);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-base);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-container a:hover {
+    text-decoration: underline;
+}
+
+.nav-container a:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+}
+
+/* hero */
+.hero-section {
+    max-width: 1100px;
+    margin-inline: auto;
+    padding: calc(var(--spacing-base) * 3) var(--spacing-base);
+}
+
+.hero-text {
+    text-align: center;
+    margin-bottom: calc(var(--spacing-base) * 2);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-base);
+}
+
+.hero-left,
+.hero-right {
+    padding: var(--spacing-base);
+    flex: 1 1 50%;
+    min-width: 0;
+}
+
+.testimonial {
+    margin: var(--spacing-base) 0;
+    padding-left: var(--spacing-base);
+    border-left: 4px solid var(--color-primary);
+    color: var(--color-muted);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-base);
+    margin: var(--spacing-base) 0;
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+
+    background-image: url(../assets/icon.jpg);
+    flex-shrink: 0;
+}
+
+.feature-list {
+    padding-inline-start: 1.25rem;
+}
+
+.feature-list li {
+    margin-bottom: .5rem;
+}
+
+/* button */
+.button {
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: .5rem;
+    margin-top: var(--spacing-base);
+}
+
+.button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.button:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+}
+
+/* product */
+.products-section {
+    max-width: 1100px;
+    margin-inline: auto;
+    padding: calc(var(--spacing-base) * 2) var(--spacing-base);
+    text-align: center;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-base);
+    margin-top: var(--spacing-base);
+}
+
+.product-card {
+    flex: 1 1 260px;
+    min-width: 0;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-base);
+    box-shadow: var(--shadow-base);
+    padding: var(--spacing-base);
+    text-align: left;
+}
+
+.product-img {
+    border-radius: var(--radius-base);
+    margin-bottom: var(--spacing-base);
+}
+
+/* contact*/
+.contact-section {
+    max-width: 700px;
+    margin-inline: auto;
+    padding: var(--spacing-base);
+    text-align: center;
+}
+
+.contact-list {
+    text-align: left;
+    margin: var(--spacing-base) 0;
+}
+
+.contact-item {
+    margin-bottom: var(--spacing-base);
+}
+
+.contact-item dt {
+    font-weight: bold;
+}
+
+
+/*footer */
+.site-footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: calc(var(--spacing-base) * 2) var(--spacing-base);
+}
+
+.footer-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 var(--spacing-base) 0;
+}
+
+.footer-copy {
+    color: #f0e6da;
+    margin: 0;
+}
+
+/* breakpoint */
+@media (min-width: 768px) {
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero-content {
+        flex-direction: row;
+    }
+}
